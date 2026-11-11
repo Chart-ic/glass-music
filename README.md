@@ -1,5 +1,5 @@
 # glass-music
-내가쓸라고만듦
+내가쓸라고만듦 made by ai
 ## 빌드 및 실행 방법 
 ### 서비스 설치
 1. 서비스 파일(`glass-music.service`)을 `~/.config/systemd/user/`로 복사/이동하세요.
