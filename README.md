@@ -2,7 +2,7 @@
 내가쓸라고만듦
 ## 빌드 및 실행 방법 
 ### 서비스 설치
-1. 서비스 파일을 `~/.config/systemd/user/`로 옮기세요.
+1. 서비스 파일을 `~/.config/systemd/user/`로 복사/이동하세요.
 2. 서비스 파일을 텍스트 에디터로 열어 *처리된 부분을 자신의 사용자 이름으로 변경하세요.
    ```
    ExecStart=/home/*/glass_music/bin/glass-music
