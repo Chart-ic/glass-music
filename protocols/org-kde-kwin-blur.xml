@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol name="org_kde_kwin_blur">
+  <copyright>
+    Copyright 2015 Martin Gräßlin
+  </copyright>
+
+  <interface name="org_kde_kwin_blur_manager" version="1">
+    <description summary="manager to blur background behind surfaces">
+      Factory interface for creating org_kde_kwin_blur objects.
+    </description>
+
+    <request name="create">
+      <arg name="id" type="new_id" interface="org_kde_kwin_blur"/>
+      <arg name="surface" type="object" interface="wl_surface"/>
+    </request>
+
+    <request name="unset">
+      <arg name="surface" type="object" interface="wl_surface"/>
+    </request>
+  </interface>
+
+  <interface name="org_kde_kwin_blur" version="1">
+    <description summary="blur the background behind a surface">
+      Applies a blur effect to the background behind a surface.
+    </description>
+
+    <request name="commit">
+      <description summary="commit the blur changes"/>
+    </request>
+
+    <request name="set_region">
+      <description summary="sets the region to blur, null for entire surface"/>
+      <arg name="region" type="object" interface="wl_region" allow-null="true"/>
+    </request>
+
+    <request name="release" type="destructor">
+      <description summary="release the blur object"/>
+    </request>
+  </interface>
+</protocol>

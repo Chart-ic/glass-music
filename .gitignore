@@ -1,0 +1,39 @@
+# Build outputs & binaries
+bin/
+build/
+*.o
+*.a
+*.so
+
+# Test files & temporary images (exclude assets folder)
+test_*.png
+test_*.jpg
+test_*.jpeg
+crop_*.png
+preview_*.png
+*.png
+*.jpg
+*.jpeg
+!assets/**
+
+# User configurations & runtime caches
+config.ini
+*.ini
+*.log
+.cache/
+
+# Editor & IDE artifacts
+.vscode/
+.idea/
+*.swp
+.*.swp
+*.swo
+.*.swo
+*.kate-swp
+.*.kate-swp
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Glass Music Overlay
+GenericName=Music HUD Overlay
+Comment=Native Wayland Glassmorphic Music Overlay (MPRIS2)
+Exec=glass-music
+Icon=multimedia-player
+Terminal=false
+Categories=AudioVideo;Audio;Player;Utility;
+Keywords=music;overlay;mpris;glassmorphism;hud;
+StartupNotify=false
+X-KDE-autostart-phase=2
+

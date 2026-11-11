@@ -1,0 +1,14 @@
+[Unit]
+Description=Glass Music Overlay (Native Wayland Glassmorphic Music HUD)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/chartic/glass_music/bin/glass-music
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target
+
